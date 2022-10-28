@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 
 app.get("/", function(req, res) {
-    res.render('home');
+    res.render('home', {pageTitle: "Home"});
 });
 
 app.listen(3000, function() {
