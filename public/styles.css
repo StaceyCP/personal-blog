@@ -3,6 +3,10 @@
     src: url(/fonts/SansSerifFLF.otf);
 }
 
+html {
+    min-height: 100%;
+}
+
 body{
     margin: 0px;
     font-family: 'SansSerifFLF';
@@ -38,9 +42,41 @@ body{
     margin: 30px 15%;
 }
 
+.blogPost {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    border: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px rgba(65, 65, 65, 0.3);
+    background-color: rgb(241, 204, 192);
+    cursor: pointer;
+    margin-top: 20px;
+    max-width: fit-content;
+    padding: 5px 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    transform: scale(106%);
+}
+
+.composeBtn {
+    margin: 10px auto;
+}
+
+.composeBtn a {
+    color: black;
+    text-decoration: none;
+}
+
 .footer__container {
     align-items: flex-end;
     background-color: rgb(241, 204, 192);
+    bottom: 0px;
     display: flex;
     justify-content: center;
     opacity: 0.7;
