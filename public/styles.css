@@ -52,7 +52,7 @@ p {
 }
 
 .navigation__link:hover {
-    color: turquoise;
+    color:cornflowerblue;
 }
 
 .content__container {
@@ -63,6 +63,11 @@ p {
 .blogPost {
     display: flex;
     flex-direction: column;
+}
+
+.postLink {
+    color: cornflowerblue;
+    text-decoration: none;
 }
 
 .btn {
