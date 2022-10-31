@@ -1,14 +1,16 @@
-<%- include("header") -%>
+<%- include("partials/header") -%>
 
-<% for (let i = 0; i<posts.length; i++) { %>
+<% posts.forEach(function(post) { %>
     <div class="post">
-        <h2> <%= posts[i].postTitle %> </h2>
-        <p> <%= posts[i].postContent %> </p>
-        <a href="/posts">Continue reading</a>
+        <h3> <%= post.postTitle %> </h3>
+        <div class="postContent">
+            <p> <%= post.postContent %> </p>
+            <a href="/posts">Continue reading</a>
+        </div>
     </div>
-<% }; %>
+<% }); %>
 
 <div class="btn composeBtn">
     <a href="/compose">Compose +</a>
 </div>
-<%- include("footer") -%>
+<%- include("partials/footer") -%>
